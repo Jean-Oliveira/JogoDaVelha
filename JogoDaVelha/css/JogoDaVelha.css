@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&family=Zeyada&display=swap');
+
+:root{
+    --cor-botao: #008080;
+    --cor-fundo: linear-gradient(90deg,#7a4e48,#4a4031);
+    --cor-fundo-jogo: rgba(0,0,0,0.7);
+    --cor-fundo-jogo-caixa: rgba(0,0,0,0.4);
+    --cor-fonte: #ffffff;
+    --cor-vencedor: green;
+
+}
+body{
+    background: var(--cor-fundo);
+    font-family: Phudu ;
+}
+
+h2{
+    text-align: center;
+    margin-top: -5px;
+    color: var(--cor-fonte);
+}
+.conteiner{
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--cor-fundo-jogo);
+    border: 3px solid black;
+}
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.celula{
+    width: 75px;
+    height: 65px;
+    margin: 4px 2px;
+    font-weight: 300;
+    padding-top: 10px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: var(--cor-fundo-jogo-caixa);
+    color: var(--cor-fonte);
+    font-size: 30px;
+}
+
+.reiniciar{
+    margin: 1em 0 ;
+    background-color: var(--cor-botao);
+    color: var(--cor-fonte);
+    padding: 5px;
+    width: 75px;
+    border-radius: 3px;
+}
